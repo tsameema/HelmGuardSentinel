@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yolov8_helemt_detection</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif; margin: 0; padding: 0;  background-color: #a3edcb;
+            }
+            h1{
+                text-align: center; padding: 5px; color: #4e73b3d5
+            }
+            h2{
+                text-align: center; padding: 3px; color: #b3904ed5
+            }
+            p{
+                text-align: center; padding: 1px; color: #4a4130d5
+            }
+            img {
+                width: auto; /* Adjust the width to your desired size, such as 50% */
+                height: 500px; /* Automatically maintain the aspect ratio */
+                display: block; /* To remove extra space around the image */
+                margin: 0 auto; /* Center horizontally */
+        }
+        </style>
+    </head>
+<body>  
+    <h1 text-align: center> YOLOv8</h1>
+    <h2 text-align: center> HELMET, HEAD, VEST DETECTION</h2>
+    <p> {{iou_val}} </p> 
+    <p> Classes : {{match1}} </p>
+    <img src="{{ url_for('static', filename=output_path) }}">
+</body>
+</html>
+
